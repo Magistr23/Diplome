@@ -1,0 +1,86 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+div > h1 {
+    text-align: center;
+}
+
+.body {
+    border: black 1px solid;
+    height: 300px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container_fix > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    margin: 5px 5px;
+    padding: 5px 10px;
+}
+
+.msg {
+    text-align: center;
+}
+
+.container > button {
+    padding: 100px;
+    margin: 100px;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Recovery > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    border: cornflowerblue solid 5px;
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 5px 1px;
+}
+
+a:hover{
+    border-bottom: 1px solid;
+    background: #CDFEAA;
+}
+
+.fix {
+    padding: 0;
+}
