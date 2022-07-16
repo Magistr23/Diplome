@@ -18,6 +18,10 @@ if (!$_SESSION['user']) {
     header('Location: index.php');
 }
 
+if (isset($_POST['delete_file'])) {
+    $delete = new File();
+    $delete->detFile($_POST['login']);
+}
 ?>
 <!doctype html>
 <html lang="ru">
@@ -86,7 +90,10 @@ if (!$_SESSION['user']) {
         echo 'У вас уже загружено';
         foreach ($listFile as $list) {
             if ($list['login'] === $_SESSION['user']['login']) {
+                echo '<form action="diplom.php" method="post">';
                 echo '<input type="text" name="login" value="' . $list['name'] . '">';
+                echo '<input type="submit" name="delete_file" value="Удалить">';
+                echo '</form>';
             }
         }
     } else {
